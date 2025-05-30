@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家庭网站聚合中心</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>家庭网站聚合中心</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="搜索网站...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <button id="addCategoryBtn" class="btn">添加分类</button>
+            <button id="addSiteBtn" class="btn">添加网站</button>
+        </header>
+
+        <div id="categoriesContainer" class="categories"></div>
+    </div>
+
+    <!-- 添加分类模态框 -->
+    <div id="categoryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>添加新分类</h2>
+            <form id="categoryForm">
+                <div class="form-group">
+                    <label for="categoryName">分类名称:</label>
+                    <input type="text" id="categoryName" required>
+                </div>
+                <button type="submit" class="btn">添加</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 添加网站模态框 -->
+    <div id="siteModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>添加新网站</h2>
+            <form id="siteForm">
+                <div class="form-group">
+                    <label for="siteName">网站名称:</label>
+                    <input type="text" id="siteName" required>
+                </div>
+                <div class="form-group">
+                    <label for="siteUrl">网站地址:</label>
+                    <input type="url" id="siteUrl" required placeholder="https://example.com">
+                </div>
+                <div class="form-group">
+                    <label for="siteIcon">图标 (可选):</label>
+                    <input type="text" id="siteIcon" placeholder="输入字体图标类名，如: fas fa-home">
+                </div>
+                <div class="form-group">
+                    <label for="siteCategory">选择分类:</label>
+                    <select id="siteCategory" required></select>
+                </div>
+                <button type="submit" class="btn">添加</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
