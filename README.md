@@ -21,8 +21,12 @@
 ```bash
 # 克隆项目
 git clone https://github.com/VincentFox/family_website.git
+
+cd  family-website
+
 # 构建镜像
 docker build -t family-website .
 
 # 运行容器（端口可自定义）
 docker run -d -p 8080:80 --name website family-website
+
