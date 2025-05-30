@@ -19,6 +19,8 @@
 
 ## 部署指南 🚀
 ```bash
+# 克隆项目
+git clone https://github.com/VincentFox/family_website.git
 # 构建镜像
 docker build -t family-website .
 
