@@ -23,7 +23,7 @@
 git clone https://github.com/VincentFox/family_website.git
 
 cd  family-website
-
+#test
 # 构建镜像
 docker build -t family-website .
 
