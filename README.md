@@ -30,6 +30,4 @@ docker build -t family-website .
 # 运行容器（端口可自定义）
 docker run -d -p 8080:80 --name website family-website
 
-# test
-docker sad d asd 
 
